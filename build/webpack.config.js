@@ -32,7 +32,7 @@ let config = {
     port: 8082,
     proxy: {
       '/': {
-        target: 'http://localhost:8088/',
+        target: 'http://localhost:8000/',
         secure: false
       }
     },

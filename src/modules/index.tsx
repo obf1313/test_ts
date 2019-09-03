@@ -7,13 +7,13 @@ function Loading() {
   return <Spin />;
 }
 
-const Home = Loadable({
-  loader: () => import('@views/Home'),
+const Register = Loadable({
+  loader: () => import('@views/User/Register'),
   loading: Loading
 });
 
-const User = Loadable({
-  loader: () => import('@views/User'),
+const Home = Loadable({
+  loader: () => import('@views/Home'),
   loading: Loading
 });
 
@@ -22,8 +22,8 @@ class App extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/User" component={User} />
+          <Route exact path="/" component={Register} />
+          <Route exact path="/Home" component={Home} />
         </Switch>
       </Router>
     );
