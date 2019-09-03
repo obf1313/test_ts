@@ -30,12 +30,12 @@ let config = {
   optimization,
   devServer: {
     port: 8082,
-    // proxy: {
-    //   '/': {
-    //     target: 'http://localhost:8088/',
-    //     secure: false
-    //   }
-    // },
+    proxy: {
+      '/': {
+        target: 'http://localhost:8088/',
+        secure: false
+      }
+    },
   },
   // 生成source map，方便调试
   devtool: 'cheap-eval-source-map'

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Button } from 'antd';
 import { Link } from 'react-router-dom';
+import { Ajax } from '@utils/Ajax';
 
 interface IProps {
   color: string,
@@ -26,11 +27,18 @@ class Home extends React.Component<IProps, IState> {
     this.setState({
       count
     });
+    this.testAjax();
   }
 
   private buildName = (firstName: string, lastName?: string) => {
     if (lastName) return firstName + lastName;
     else return firstName;
+  };
+
+  private testAjax = () => {
+    Ajax.post('buildUnit/listAll', {}, {}, (xhr, data) => {
+      console.log(data);
+    });
   };
 
   public render(): React.ReactNode {
