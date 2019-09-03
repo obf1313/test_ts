@@ -1,5 +1,6 @@
 /**
- * Ajax 封装方法
+ * @description Ajax 封装方法
+ * @author cnn
  * **/
 import { message, Modal } from 'antd';
 import * as Qwest from 'qwest';

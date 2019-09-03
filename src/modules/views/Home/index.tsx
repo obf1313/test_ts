@@ -1,3 +1,7 @@
+/**
+ * @description 首页
+ * @author cnn
+ * **/
 import * as React from 'react';
 import { Row } from 'antd';
 

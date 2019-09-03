@@ -1,3 +1,7 @@
+/**
+ * @description 注册界面
+ * @author cnn
+ * **/
 import * as React from 'react';
 import { Button, Input, Row } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
@@ -11,7 +15,7 @@ interface IState {
   password: string
 }
 
-export class Register extends React.Component<RouteComponentProps  & IProps, IState> {
+export class Register extends React.Component<RouteComponentProps & IProps, IState> {
   public readonly state: Readonly<IState> = {
     userName: '',
     password: ''

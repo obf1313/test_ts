@@ -1,3 +1,7 @@
+/**
+ * @description 测试注册界面
+ * @author cnn
+ * **/
 module.exports = {
   'Register Test'(browser) {
     browser

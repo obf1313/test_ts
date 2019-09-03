@@ -2,8 +2,8 @@ const chromedriver = require('chromedriver');
 
 module.exports = {
   // 测试文件入口
-  src_folders: ['tests'],
-  // 输出报表路径
+  src_folders: ['test'],
+  // 输出日志路径
   output_folder: 'reports',
 
   webdriver: {
