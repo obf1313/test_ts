@@ -5,7 +5,7 @@
   "main": "index.tsx",
   "scripts": {
     "test": "npm run test",
-    "dev": "webpack-dev-server --config build/webpack.config.js --inline --host 0.0.0.0 --mode development --hot",
+    "dev": "webpack-dev-server --config build/webpack.config.js --inline --mode development --hot",
     "build": "webpack --config build/webpack.config.js --mode production",
     "eslint": "eslint src --ext .ts,.tsx"
   },

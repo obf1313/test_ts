@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { Button } from 'antd';
+import { Button, Input } from 'antd';
 import { Link } from 'react-router-dom';
+import Row from 'antd/lib/grid/row';
 
 interface IProps {
   color: string,
@@ -37,9 +38,13 @@ class Home extends React.Component<IProps, IState> {
     const { firstName, lastName, count } = this.state;
     let fullName: string = this.buildName(firstName, lastName);
     return (
-      <Link to="/User">
-        <Button>{fullName + ':' + count}</Button>
-      </Link>
+      <Row>
+        <Link to="/User">
+          <Button>{fullName + ':' + count}</Button>
+        </Link>
+        <Input placeholder="45364" />
+        <div>45646</div>
+      </Row>
     );
   }
 }

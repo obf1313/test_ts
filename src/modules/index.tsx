@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { hot } from 'react-hot-loader';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import * as Loadable from 'react-loadable';
 import { Spin } from 'antd';
 
@@ -18,7 +17,6 @@ const User = Loadable({
   loading: Loading
 });
 
-@hot(module)
 class App extends React.Component {
   render() {
     return (
