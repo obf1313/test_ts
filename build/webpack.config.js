@@ -7,13 +7,7 @@ const optimization = require('./optimization');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const { resolve } = require('./utils');
 
-// 是否是开发环境
-// process.env拿到的是一个对象，它的属性可以通过命令行参数传入
-// 这个NODE_ENV 就是从package.json的dev/config scripts传进来的
-const isDev = process.env.NODE_ENV === 'development';
-
 let config = {
-  mode: isDev ? 'development' : 'production',
   entry: {
     app: resolve('src/modules/app.tsx'),
   },
