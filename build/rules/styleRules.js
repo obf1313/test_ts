@@ -1,6 +1,6 @@
 // css分离
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const theme = require('./../../theme');
+const theme = require('../../__config__/theme');
 const { resolve } = require('./../utils');
 
 module.exports = [

@@ -1,10 +1,11 @@
+// nightWatch 配置文件
 const chromedriver = require('chromedriver');
 
 module.exports = {
   // 测试文件入口
-  src_folders: ['test'],
+  src_folders: ['__test__'],
   // 输出日志路径
-  output_folder: 'reports',
+  output_folder: '__reports__',
 
   webdriver: {
     start_process: true,

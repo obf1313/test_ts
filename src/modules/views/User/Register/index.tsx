@@ -2,10 +2,10 @@
  * @description 注册界面
  * @author cnn
  * **/
-import * as React from 'react';
+import React from 'react';
 import { Button, Input, Row } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-import Ajax from '@utils/Ajax';
+import Ajax from '../../../../utils/Ajax';
 
 interface IProps {
 }
@@ -24,7 +24,7 @@ export class Register extends React.Component<RouteComponentProps & IProps, ISta
   public componentDidMount(): void {
   }
 
-  private register = () => {
+  public register = () => {
     const { userName, password } = this.state;
     let params = {
       username: userName,

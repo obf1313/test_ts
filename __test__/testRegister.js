@@ -11,7 +11,7 @@ module.exports = {
       .setValue('.ant-input:nth-of-type(2)', '123456')
       .click('.ant-btn')
       .pause(1000)
-      .assert.containsText('#app', '首页')
+      .assert.containsText('#app', '首 页')
       .end();
   }
 };
