@@ -5,7 +5,7 @@
 import * as React from 'react';
 import { Button, Input, Row } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
-import Ajax from '../../../../utils/Ajax';
+import Ajax from '@utils/Ajax';
 
 interface IProps {
 }
